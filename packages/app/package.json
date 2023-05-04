@@ -10,6 +10,7 @@
     "@lightninglabs/lnc-web": "^0.2.3-alpha",
     "@noble/hashes": "^1.2.0",
     "@noble/secp256k1": "^1.7.0",
+    "@nostr-dev-kit/ndk": "^0.3.10",
     "@protobufjs/base64": "^1.1.2",
     "@reduxjs/toolkit": "^1.9.1",
     "@scure/bip32": "^1.1.5",

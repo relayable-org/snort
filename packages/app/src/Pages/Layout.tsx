@@ -70,7 +70,7 @@ export default function Layout() {
     }
   }, [pub]);
 
-  useEffect(() => {
+  /*useEffect(() => {
     if (relays) {
       (async () => {
         for (const [k, v] of Object.entries(relays.item)) {
@@ -83,7 +83,7 @@ export default function Layout() {
         }
       })();
     }
-  }, [relays]);
+  }, [relays]);*/
 
   function setTheme(theme: "light" | "dark") {
     const elm = document.documentElement;
