@@ -39,9 +39,9 @@ export const ProfileCacheExpire = 1_000 * 60 * 60 * 6;
  * Default bootstrap relays
  */
 export const DefaultRelays = new Map<string, RelaySettings>([
-  ["wss://relay.snort.social/", { read: true, write: true }],
-  ["wss://nostr.wine/", { read: true, write: false }],
-  ["wss://nos.lol/", { read: true, write: true }],
+  ["wss://relayable.org/", { read: true, write: true }],
+  ["wss://pleb.cloud/", { read: true, write: true }],
+  ["wss://nostr.bitcoiner.social/", { read: true, write: true }],
 ]);
 
 /**
@@ -53,6 +53,8 @@ export const SearchRelays = ["wss://relay.nostr.band"];
  * List of recommended follows for new users
  */
 export const RecommendedFollows = [
+  "d2704392769c20d67a153fa77a8557ab071ef27aafc29cf6b46faf582e0595f2", // relayable
+  "2479739594ed5802a96703e5a870b515d986982474a71feae180e8ecffa302c6", // jascha
   "82341f882b6eabcd2ba7f1ef90aad961cf074af15b9ef44a09f9d2a8fbfbe6a2", // jack
   "3bf0c63fcb93463407af97a5e5ee64fa883d107ef9e558472c4eb9aaaefa459d", // fiatjaf
   "020f2d21ae09bf35fcdfb65decf1478b846f5f728ab30c5eaabcd6d081a81c3e", // adam3us
