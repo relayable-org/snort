@@ -7,8 +7,8 @@ const System = new NostrSystem({});
 
 // some bootstrap relays
 [
-    "wss://relay.snort.social",
-    "wss://nos.lol"
+    "wss://relayable.org",
+    "wss://pleb.cloud"
 ].forEach(r => System.ConnectToRelay(r, { read: true, write: false }));
 
 export function Note({ ev }: { ev: TaggedRawEvent }) {
