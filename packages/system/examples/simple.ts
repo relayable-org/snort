@@ -21,7 +21,7 @@ const System = new NostrSystem({
 (async () => {
     // connec to one "bootstrap" relay to pull profiles/relay lists from
     // also used as a fallback relay when gossip model doesnt know which relays to pick, or "authors" are not provided in the request
-    await System.ConnectToRelay("wss://relay.snort.social", { read: true, write: false });
+    await System.ConnectToRelay("wss://relayable.org", { read: true, write: true });
 
     // ID should be unique to the use case, this is important as all data fetched from this ID will be merged into the same NoteStore
     const rb = new RequestBuilder("get-posts");
