@@ -47,16 +47,6 @@ const SettingsIndex = () => {
               <FormattedMessage defaultMessage="Export Keys" />
               <Icon name="arrowFront" />
             </div>
-            <div className="settings-row inner" onClick={() => navigate("handle")}>
-              <Icon name="badge" />
-              <FormattedMessage defaultMessage="Nostr Adddress" />
-              <Icon name="arrowFront" />
-            </div>
-            <div className="settings-row inner" onClick={() => navigate("/subscribe/manage")}>
-              <Icon name="diamond" />
-              <FormattedMessage defaultMessage="Subscription" />
-              <Icon name="arrowFront" />
-            </div>
             {sub && (
               <div className="settings-row inner" onClick={() => navigate("accounts")}>
                 <Icon name="code-circle" />
